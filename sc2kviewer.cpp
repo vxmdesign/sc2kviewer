@@ -45,7 +45,8 @@ int main(int argc, char **argv){
   SDL_Event ev;
   int key_state;
   if(argc != 2 && argc != 3){ 
-    printf("need 3 args\n");
+    printf("Usage: sc2kviewer <mif file>\n");
+    return -1;
   }
  
   sd = new ScDisplay();
