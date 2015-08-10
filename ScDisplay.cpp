@@ -5,7 +5,8 @@ ScDisplay::ScDisplay(){
   if(SDL_Init(SDL_INIT_EVERYTHING) < 0){
     printf("Could not init!\n");
   }
-  mPalette = new Sc2kPalette("sc2k.pal");
+  //  mPalette = new Sc2kPalette("sc2k.pal");
+  mPalette = new Sc2kPalette();
 }
 
 ScDisplay::~ScDisplay(){
