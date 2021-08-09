@@ -5,7 +5,11 @@
 #include<sys/types.h>
 #include<sys/stat.h>
 #include<fcntl.h>
+#if !defined(__APPLE__) && !defined(__MACH__)
 #include<malloc.h>
+#else
+#include<stdlib.h>
+#endif
 #include<unistd.h>
 #include<string.h>
 
