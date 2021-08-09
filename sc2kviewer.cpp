@@ -93,4 +93,5 @@ int main(int argc, char **argv){
   delete sc;
   delete sd;
 
+  return 0;
 }
